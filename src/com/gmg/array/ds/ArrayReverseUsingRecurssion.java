@@ -9,14 +9,14 @@ public class ArrayReverseUsingRecurssion {
         return input;
     }
 
-    private static boolean swapArrayElement(int start, int end, List<Integer> input) {
+    private static void swapArrayElement(int start, int end, List<Integer> input) {
         if(start < end){
             int temp = input.get(end);
             input.set(end,input.get(start));
             input.set(start,temp);
-            return swapArrayElement (start++,end--,input);
+            swapArrayElement (++start,--end,input);
         }else{
-            return false;
+            return ;
         }
     }
 }

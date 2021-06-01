@@ -19,7 +19,8 @@ public class ArraysRevers {
 
             int arrCount = 4;//Integer.parseInt(bufferedReader.readLine().trim());
 
-            List<Integer> arr = new ArrayList <Integer>(Arrays.asList(1,4,5,7));
+            List<Integer> arr = new ArrayList <Integer>(Arrays.asList(1,4,5,7,4,8,9,0));
+            arrCount = arr.size();
             /*Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
                     .map(Integer::parseInt)
                     .collect(toList());*/
